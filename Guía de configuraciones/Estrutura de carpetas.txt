@@ -1,0 +1,20 @@
+ESTRUCTURA DE CARPETAS DEL SISTEMA
+==================================
+
+Sistema_Medico_Portable\
+├── php\                          Intérprete PHP portable (descargar aparte)
+│   ├── php.exe
+│   ├── php.ini                   Configuración (debe tener pdo_sqlite activo)
+│   └── ext\
+│       └── php_pdo_sqlite.dll    Driver de SQLite
+├── css\
+│   └── style.css                 Diseño visual del sistema
+├── index.php                     Interfaz y lógica de login, citas y reporte
+├── db_config.php                 Conexión PDO y creación automática de tablas
+├── citas_medicas.db              Base de datos SQLite (se crea automáticamente)
+├── EJECUTAR_SISTEMA.bat          Lanzador del servidor local
+├── README.md                     Documentación del repositorio
+└── Guía de configuraciones\      Notas de instalación
+
+El sistema es portable: se puede mover la carpeta completa (incluida la base
+de datos) a otra ubicación o a una memoria USB y seguirá funcionando.

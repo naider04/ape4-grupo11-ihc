@@ -1,0 +1,7 @@
+# Intérprete PHP portable: se descarga aparte (ver Guía de configuraciones)
+php/
+
+# Archivos temporales del sistema
+Thumbs.db
+desktop.ini
+*.log

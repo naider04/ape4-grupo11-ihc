@@ -1,0 +1,23 @@
+DESCARGA DE PHP PORTABLE
+========================
+
+1. Ir a https://windows.php.net/download/
+2. Descargar la versión "PHP 8.x (x64) Thread Safe" en formato ZIP.
+3. Descomprimir el contenido del ZIP dentro de la carpeta del proyecto,
+   en una carpeta llamada exactamente: php
+4. Verificar que exista el archivo: php\php.exe
+5. Renombrar (o copiar) "php.ini-development" como "php.ini" si no existe.
+
+El proyecto no incluye los binarios de PHP en el repositorio por su tamaño.
+Una vez copiados, la estructura debe quedar así:
+
+    Sistema_Medico_Portable\
+        php\
+            php.exe
+            php.ini
+            ext\
+        index.php
+        db_config.php
+        EJECUTAR_SISTEMA.bat
+
+Referencia: https://www.php.net/manual/es/install.windows.php

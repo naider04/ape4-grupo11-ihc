@@ -1,0 +1,23 @@
+ACTIVAR EL DRIVER pdo_sqlite EN php.ini
+=======================================
+
+1. Abrir el archivo php\php.ini con un editor de texto (Bloc de notas o VS Code).
+2. Buscar la línea:
+
+       ;extension=pdo_sqlite
+
+3. Eliminar el punto y coma inicial para que quede así:
+
+       extension=pdo_sqlite
+
+4. Guardar el archivo.
+5. Reiniciar el sistema ejecutando nuevamente EJECUTAR_SISTEMA.bat.
+
+Comprobación (opcional): abrir una consola en la carpeta php y ejecutar
+
+       php -m | findstr sqlite
+
+Debe aparecer pdo_sqlite.
+
+Si la extensión no está activa, el sistema muestra el error:
+"could not find driver".
