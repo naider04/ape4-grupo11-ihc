@@ -12,6 +12,8 @@ Proyecto de la asignatura **Interacción Humano-Computador** — UNEMI.
 
 - Inicio de sesión con credenciales (`admin` / `1234`).
 - Registro de citas con nombre del paciente, especialidad, fecha y hora.
+- Edición y eliminación de citas desde un menú de opciones (⋮) en cada fila, con confirmación antes de borrar.
+- Buscador de citas por paciente, especialidad, fecha, hora o estado, sin distinguir mayúsculas ni tildes.
 - Reporte de citas leídas directamente desde la base de datos local.
 - Base de datos SQLite (`citas_medicas.db`) creada automáticamente en el primer arranque.
 - Interfaz web local (`http://127.0.0.1:8080`) con HTML/CSS separados de la lógica.
@@ -55,6 +57,14 @@ script SQL externo.
 2. Completar el formulario: paciente, especialidad, fecha y hora.
 3. Pulsar **Guardar en Base de Datos Local**.
 4. Verificar la cita en la tabla del reporte, que se lee desde SQLite.
+5. Para modificar o borrar una cita, pulsar el botón **⋮ (tres puntos)** de su fila:
+   - **Editar** carga el formulario superior con los datos de la cita y el botón cambia a
+     **Guardar cambios** (o **Cancelar edición** para descartar).
+   - **Eliminar** abre un diálogo de confirmación; al aceptar, el registro se borra de SQLite
+     definitivamente. Esta acción no se puede deshacer.
+6. Para localizar una cita, usar la lupa sobre la tabla: escribe el nombre del paciente, la
+   especialidad, una fecha (`2026-04-30` o `30/04/2026`), la hora o el estado. El contador
+   indica cuántas coinciden y **Limpiar** restaura la lista completa.
 
 ## Estructura de la base de datos
 
